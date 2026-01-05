@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@media (min-width: 768px) {
+    .info, .tasks {
+        max-width: 710px;
+    }
+    .panel {
+        max-width: 630px;
+    }
+}
+
+@media (min-width: 1245px) {
+    .info {
+        max-width: 1380px;
+    }
+    main {
+        max-width: 1180px;
+        margin: auto;
+        display: flex;
+        margin-top: -1px;
+    }
+    .panel, .dash {
+        display: grid;
+        place-content: center;
+        place-items: start;
+    }
+    .title {
+        padding-bottom: 50px;
+    }
+    .panel {
+        padding: 20px 80px 309px 80px;
+    }
+    .tasks {
+        width: 100%;
+        margin-left: 40px;
+    }
+}
